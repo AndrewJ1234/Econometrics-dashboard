@@ -39,6 +39,6 @@ Enter the following command in your terminal:
 
 ```bash
 npm i react-scripts
-
+```
 
 
