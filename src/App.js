@@ -16,9 +16,11 @@ ChartJS.register(
 );
 
 function App() {
+  // Initalize state variables for chart data and loading status
   const [chartData, setChartData] = useState({ labels: [], datasets: [] });
   const [isLoading, setIsLoading ] = useState(true);
 
+  // Use useEffect hook to fetch and parse data when component mounts
   useEffect(() => {
     const fetchParseData = async () => {
       Papa.parse(fact_environmental_data, {
@@ -44,19 +46,19 @@ function App() {
               backgroundColor: "red"
             };
           });
-            
+          // Updates the chartData state with the parsed data
           setChartData({ 
             labels: labels, 
             datasets: datasets
           });
-
+          // Update loading status
           setIsLoading(false);
         },
       });
     };
     fetchParseData();
   }, []);
-
+  // Renders the App component
   return (
     <div className="App">
       {isLoading ? (
