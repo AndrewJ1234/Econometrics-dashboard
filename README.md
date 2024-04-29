@@ -29,4 +29,16 @@ Enter the command to run the application.
 npm start
 ```
 
+# Troubleshooting
+
+If you encounter any issues while running the application, such as errors or the application not starting, you may need to install `react-scripts`. 
+
+## Install react-scripts
+
+Enter the following command in your terminal:
+
+```bash
+npm i react-scripts
+
+
 
