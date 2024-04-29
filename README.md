@@ -23,7 +23,7 @@ npm i papaparse react-chartjs-2 chart.js
 ```
 ## 4. Run Application
 
-Enter in the command to run the application
+Enter the command to run the application.
 
 ```bash
 npm start
